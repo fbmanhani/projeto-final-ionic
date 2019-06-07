@@ -12,8 +12,30 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    path: 'cursos',
+    children: [
+      {
+        path: '',
+        loadChildren: './cursos/cursos.module#CursosPageModule'
+      },
+      {
+        path: ':id',
+        loadChildren: './cursos/curso-detalhar/curso-detalhar.module#CursoDetalharPageModule'
+      }
+    ]
+  },
+  {
+    path: 'alunos',
+    children: [
+      {
+        path: '',
+        loadChildren: './alunos/alunos.module#AlunosPageModule'
+      },
+      {
+        path: ':id',
+        loadChildren: './alunos/aluno-detalhar/aluno-detalhar.module#AlunoDetalharPageModule'
+      }
+    ]
   }
 ];
 
@@ -23,4 +45,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

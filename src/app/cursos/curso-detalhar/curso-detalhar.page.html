@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/cursos"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{curso.nome}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col>
+        <b>Id: </b>{{ curso.id }}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <b>Descrição: </b>{{ curso.descricao }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

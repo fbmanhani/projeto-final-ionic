@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Alunos
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <ion-item-sliding *ngFor="let item of alunos">
+        <ion-item [routerLink]="['/alunos',item.id]">
+          <ion-icon name="person" slot="start"></ion-icon>
+          {{item.nome}}
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option color="danger" (click)=excluir(item)>
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  
+  </ion-content>

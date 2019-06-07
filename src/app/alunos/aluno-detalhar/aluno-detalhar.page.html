@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/alunos"></ion-back-button>
+      </ion-buttons>
+      <ion-title>{{aluno.nome}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col>
+          <b>Id: </b>{{ aluno.id }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <b>Data de nascimento: </b>{{ aluno.idade }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+            <b>Curso: </b>{{ aluno.curso.nome }}
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+  
+  </ion-content>
