@@ -1,5 +1,5 @@
 # projeto-final-ionic
-Projeto final apresentado para matéria Desenvolvimento de Sistemas Web para Dispositivos Móveis do Curso de SDM do IFSP São Carlos
+Projeto final apresentado para a matéria Desenvolvimento de Sistemas Web para Dispositivos Móveis do Curso de SDM do IFSP São Carlos
 
 ## Para executar o projeto, é necessário seguir os seguintes passos:
 ```
